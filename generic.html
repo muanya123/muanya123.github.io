@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>POWERBI DASHBOARD - HEALTHCARE PROVIDER DASHBOARD</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">POWERBI DASHBOARD</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="SQL.html">SQL PROJECT</a></li>
+						<li><a href="Prediction.html">PREDICTION PROJECT</a></li>
+						<li><a href="https://public.tableau.com/views/tabulea_cchimuanya/Overview?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link">TABULEAU PROJECT</a></li>
+						<li><a href="amazon.html">WEB SCRAPPING</a></li>
+						
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">HEALTHCARE PROVIDER DASHBOARD</h1>
+							<p>This healthcare data analytics project involved the development of a comprehensive dashboard to provide insights into various aspects of a hospital's operations. The dashboard covers critical metrics such as Billing Amount, Medication Cost, Treatment Cost, Insurance Cost, Room Cost, and Out-of-Pocket expenses.</p>
+							<span class="image fit"><img src="images/POWERBI.png" alt="" /></span>
+							<p>When I started this project, my first focus was on data cleaning and preparation using Power Query. This phase felt like laying a strong foundation for everything else. I began by importing key data sources, including hospital records, billing details, insurance claims, and patient demographics. Once inside the Power Query editor, I meticulously worked through various transformation tasks to ensure the data was clean, consistent, and ready for analysis. 
+								<h3>Key steps included</h3>
+								<ul>
+									<li>Removing duplicate or erroneous records</li>
+									<li>Standardizing date and time formats</li>
+									<li>Addressing missing values and outliers</li>
+									<li>Splitting or parsing columns to extract relevant information</li>
+								</ul>
+							<h3>Building the Analytical Model (Power BI):</h3>
+							<p>Calculated key metrics using DAX (Data Analysis Expressions):</p>
+								<ul>
+									<li>Created a measure for "Average Billing Amount per Visit" by dividing "Billing Amount" by the number of "Visits."</li>
+									<li>Developed a measure to calculate the "Total Billing Amount by Procedure" by summing "Billing Amount" values grouped by procedure type.</li>
+								</ul>
+							<span class="image fit"><img src="images/datamodel.png" alt="" /></span>					
+							<h3>Tables and Their Relationships:</h3>
+								<ul>
+									<li><strong>Cities Table:</strong> Links <em>City ID</em> to the <em>patients</em> table to provide location information.</li>
+									<li><strong>Departments Table:</strong> Links <em>Department ID</em> to the <em>visits</em> table to relate visits to specific hospital departments.</li>
+									<li><strong>Diagnoses Table:</strong> Connects <em>Diagnosis ID</em> to the <em>visits</em> table, detailing the diagnoses associated with visits.</li>
+									<li><strong>Insurance Table:</strong> Links <em>Insurance ID</em> to the <em>visits</em> table to include insurance coverage details.</li>
+									<li><strong>Patients Table:</strong> Serves as a central table, linking to <em>visits</em>, <em>cities</em>, and other relevant data.</li>
+									<li><strong>Providers Table:</strong> Links <em>Provider ID</em> to the <em>visits</em> table, associating healthcare providers with visits.</li>
+									<li><strong>Procedures Table:</strong> Links <em>Procedure ID</em> to the <em>visits</em> table, categorizing medical procedures performed during visits.</li>
+									<li><strong>Date Table:</strong> Links <em>Date</em> to the <em>visits</em> table for time-based analysis of hospital data.</li>
+								</ul>
+							<span class="image fit"><img src="images/modelrel.png" alt="" /></span>
+							<p>To enhance user experience, I added interactive features like the "Open Filter" and "Go to Light Mode" buttons. These small touches were important to me, as I wanted users to explore the data easily and feel in control of their analysis.</p>
+							<span class="image fit"><img src="images/dark.png" alt="" /></span>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

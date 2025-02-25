@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>PREDICTIVE ANALYSIS</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">PREDICTIVE ANALYSIS</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="SQL.html">SQL PROJECT</a></li>
+						<li><a href="powerbi.html">POWERBI PROJECT</a></li>
+						<li><a href="https://public.tableau.com/views/tabulea_cchimuanya/Overview?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link">TABULEAU PROJECT</a></li>
+						<li><a href="amazon.html">WEB SCRAPPING</a></li>
+						
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 a href="https://github.com/muanya123/Predictive-Model-for-Hospital-Readmission./tree/main" class="major">Diabetic Patient Readmission Prediction Project</h1>
+							<ul class="actions">
+								<li><a href="https://github.com/muanya123/Predictive-Model-for-Hospital-Readmission./tree/main" class="button scrolly">View Project</a></li>
+							</ul>
+								<a href="https://github.com/muanya123/Predictive-Model-for-Hospital-Readmission./tree/main" class="image fit">
+								<img src="images/predictiveimages.jpeg" alt="Power BI" />
+							  	</a>
+							<p><section id="intro" class="wrapper style1 fullscreen fade-up">
+								<div class="inner">
+									<div class="header">
+										<h3>Overview</h3>
+									</div>
+								
+									<p>This project is focused on predicting hospital readmission for diabetic patients using machine learning techniques. The objective is to build a robust classification model that determines whether a patient will be readmitted within 30 days (readmitted = 1) or not (readmitted = 0). The model leverages structured numerical data, categorical features, and textual clinical notes to generate a comprehensive feature set.</p>
+									<div class="header">
+										<h3>Key Features</h3>
+									</div>
+									<p>
+										<h5> Preprocessing:</h5>
+
+										<li> Values: Missing values in clinical notes are handled by filling with a default value (e.g. an empty string or 'nan' for Category</li>
+										<li> Column Dropping: Unwanted columns are removed to focus on relevant features.</li>
+										</p>
+									<div class="header">
+										<h5> Feature Engineering:</h5>
+
+										<li> TF-IDF Transformation: Clinical notes (free text) are converted into numerical features using a TF-IDF vectorizer, limiting the vocabulary to the top 100 terms.</li>
+										<li> One-Hot Encoding: Categorical columns such as race, gender, and medication types are transformed into binary columns to allow the model to process them.</li>
+										<li> Structured Data Integration: Numeric features like time_in_hospital, num_lab_procedures, etc., are combined with encoded categorical and text-based features into one final dataset.
+										</li>
+										</p>
+										<p>
+											<h5> Model Training:</h5>
+	
+											A Random Forest Classifier is trained on the processed data using specified hyperparameters (e.g., 1000 estimators, entropy criterion, and a maximum depth of 25) to predict patient readmission outcomes.
+											</p>
+
+										<p>
+											<h5> Test Data Prediction:</h5>
+		
+											The same preprocessing and feature engineering pipeline is applied to the test dataset. The trained model is used to predict outcomes on the test data, and the results are aggregated to analyze the distribution of predictions.
+										</p>
+									</div>
+				
+									<ul class="actions">
+										<li><a href="https://github.com/muanya123/Predictive-Model-for-Hospital-Readmission./tree/main" class="button scrolly">View Project</a></li>
+									</ul>
+								</div>
+							</section>
+							</p>
+							
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
